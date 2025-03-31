@@ -2,7 +2,7 @@ let start = document.querySelector("#start");
 let end = document.querySelector("#end");
 let move = document.querySelector("#move");
 
-start.addEventListener("click", function () {
+start.addEventListener("touchstart", function () {
   if (start.style.backgroundColor === "red") {
     start.style.backgroundColor = "blue";
   } else {
