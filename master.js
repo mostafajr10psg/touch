@@ -2,8 +2,12 @@ let start = document.querySelector("#start");
 let end = document.querySelector("#end");
 let move = document.querySelector("#move");
 
-start.addEventListener("touchstart", function () {
-  start.style.backgroundColor = "red";
+start.addEventListener("click", function () {
+  if (start.style.backgroundColor === "red") {
+    start.style.backgroundColor = "blue";
+  } else {
+    start.style.backgroundColor = "red";
+  }
 });
 
 end.addEventListener("touchstart", function () {
